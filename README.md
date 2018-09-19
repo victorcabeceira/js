@@ -1,2 +1,0 @@
-# js
-JS for dummies
