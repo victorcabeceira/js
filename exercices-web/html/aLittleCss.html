@@ -1,0 +1,38 @@
+<html>  
+  <head>
+    <title>A little CSS</title>
+    <link rel="stylesheet" href="aLittleCss.css">
+    <!-- Not the right way, just testing -->
+    <style>
+      h1 {
+        font-size: 32px;
+        background-color: hsl(261, 100%, 66%);
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      #main-text {
+        font-size: 20px;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .text {
+        background-color: hsl(44, 52%, 94%);
+        font-size: 16px;
+      }
+
+      .text--red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <span id="main-text">Formatted text 1</span><br/>
+    <span class="text text--red">Formatted text 2</span><br />
+    <span class="text text--bold text--red">Formatted text 3</span><br />
+    <!-- Avoid  inline style -->
+    <span class="text" style="color: blue">Formatted text 4</span>
+  </body>
+</html>
