@@ -4,10 +4,10 @@
 <h2>Folders list</h2>
 <ul class="tree">
     <li>
-        Backend
+        <span mw-folder>Backend</span>
         <ul>
             <li>
-                app
+                <span mw-folder>app</span>
                 <ul>
                     <li>user.js</li>
                     <li>product.js</li>
@@ -15,7 +15,7 @@
                 </ul>
             </li>
             <li>
-                config
+                <span mw-folder>config</span>
                 <ul>
                     <li>database.js</li>
                     <li>routes.js</li>
@@ -25,10 +25,10 @@
         </ul>
     </li>
     <li>
-        frontend
+        <span mw-folder>frontend</span>
         <ul>
             <li>
-                public
+                <span mw-folder>public</span>
                 <ul>
                     <li>app.css</li>
                     <li>app.js</li>
@@ -40,3 +40,12 @@
 </ul>
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    document.querySelectorAll('[mw-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const display = ul.style.display
+            ul.style.display = display === 'none' ? 'block' : 'none'
+        }
+    })
+</script>
