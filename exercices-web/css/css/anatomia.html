@@ -5,12 +5,39 @@
     <meta charset="UTF-8">
     <title>Anatomia CSS</title>
     <style>
-        /* ... */
+        .seletor {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /* multiple values */
+            border: solid 5px navy; /* shorthand properties */
+            font-family: helvetica, sans-serif;
+            /* functions */
+            width: calc(100% - 100px);
+            background-color: rgb(134, 169, 189);
+        }
+        
+        /* pseudo class */
+        .seletor:hover {
+            background-color: blue;
+        }
+
+        /* pseudo element */
+        .seletor::first-letter {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        /* 
+            naming pattern 
+            dash-case or camelCase, just be consistent, use same throughout the whole project
+        */
+        
     </style>
 </head>
 
 <body>
-    <div class="selector">Conteúdo</div>
+    <div class="seletor">Conteúdo</div>
 </body>
 
 </html>
